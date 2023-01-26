@@ -1,4 +1,4 @@
-import { Divider, Table } from "antd";
+import { Table } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
 const columns = [
   {

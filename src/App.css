@@ -69,3 +69,16 @@
 p{
   color: grey;
 }
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color:#282c34
+}
+.ant-tabs .ant-tabs-tab-btn {
+  color:grey
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+ background-color:#282c34
+}
+.ant-tabs .ant-tabs-tab:hover{
+  color:grey
+}

@@ -1,22 +1,43 @@
 import React from 'react';
-import { Card, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 import ProfileDetails from './profile';
 import Transactions from './transaction';
+import Activities from './activities';
+import Products from './products';
+
 const Main = () => (
-  <div className="site-card-wrapper">
-    <Row gutter={16}>
-      <Col span={8}>
+  <div className="site-card-wrapper"
+  style={{display:"flex"}}
+  >
+   
+<div 
+style={{ width:"80%"}}>
+<Row gutter={16}
+>
+      <Col span={12}>
         <ProfileDetails/>
       </Col>
-      <Col span={8}>
+      <Col span={12}>
         <Transactions/>
       </Col>
-      <Col span={8}>
-        <Card title="Card title" bordered={false}>
-          Card content
-        </Card>
+    </Row>
+    <br/>
+    <Row gutter={16}
+  >
+    <Col span={12}>
+       <Products/>
       </Col>
     </Row>
+</div>
+<div >
+<Row gutter={16}
+style={{ marginLeft:"2%"}}
+>
+    <Col span={25}>
+       <Activities/>
+      </Col>
+    </Row>
+</div>
   </div>
 );
 export default Main;

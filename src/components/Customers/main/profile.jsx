@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Row } from "antd";
 import User from "../../../atoms/User-Avatar";
 import { MdOutlineEdit } from "react-icons/md";
-import { profileStatus, dot, detailsHolder, secondDetail } from "./style";
+import { profileStatus, dot, detailsHolder } from "./style";
 
 const ProfileDetails = () => {
   const Title = () => {

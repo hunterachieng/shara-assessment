@@ -33,14 +33,14 @@ const SideLayout = ({children}) => {
           // defaultSelectedKeys={['4']}
           
         >
-            <Menu.Item><Link to="/hello">Overview +</Link></Menu.Item>
+            {/* <Menu.Item><Link to="/hello">Overview +</Link></Menu.Item> */}
             <Menu.Item><Link to="/" >Customers +</Link></Menu.Item>
-            <Menu.Item>Companies +</Menu.Item>
+            {/* <Menu.Item>Companies +</Menu.Item>
             <Menu.Item>Deposits +</Menu.Item>
             <Menu.Item>Loans +</Menu.Item>
-            <Menu.Item>Products +</Menu.Item>
-            <Menu.Item>Users +</Menu.Item>
-            <Menu.Item>Communications</Menu.Item>
+            <Menu.Item>Products +</Menu.Item> */}
+            <Menu.Item><Link to="/users">Users +</Link></Menu.Item>
+            {/* <Menu.Item>Communications</Menu.Item> */}
             </Menu>
       </Sider>
       <Layout>
