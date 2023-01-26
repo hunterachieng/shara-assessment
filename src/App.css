@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+.ant-menu-item-selected {
+  background-color: #d3d3d3 !important;
+  color: #282c34 !important;
+}
+.ant-menu-light .ant-menu-item-selected {
+  background-color: #d3d3d3 !important;
+}
+
+.ant-menu-item-selected .ant-menu-title-content{
+  color: #282c34 !important;
+  background-color: #d3d3d3 !important;
+}
+.ant-menu-title-content{
+  color: grey;
+}
+
+.ant-input{
+  background-color: #d3d3d3 !important;
+}
+.ant-input-affix-wrapper:hover{
+  border-color: #d3d3d3 !important;
+}
+
+.ant-input:focus{
+  border-color: #d3d3d3 !important;
+}
+.ant-input-affix-wrapper-focused{
+  border-color: #d3d3d3 !important;
+  box-shadow: 0 0 0 2px #d3d3d3;
+}
