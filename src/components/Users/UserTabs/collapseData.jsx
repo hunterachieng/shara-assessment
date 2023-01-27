@@ -39,7 +39,6 @@ const CollapseData = () => {
         <Avatar
           size={{ xs: 24, sm: 32, md: 50, lg: 84, xl: 80, xxl: 100 }}
           icon="NI"
-        //   style={avatar}
         />
         <div >
           <h3>{item.name}</h3>
@@ -100,7 +99,6 @@ const CollapseData = () => {
             <Col span={5}>
               <p style={paragraph}>Shop Setup Photos</p>
               <PictureOutlined /> <a href="#">{item.shopSetup}</a>
-              {/* <small >23KB.jpeg</small> */}
             </Col>
             <Col span={10}>
               <p style={paragraph}>Business License or permit/certificate</p>

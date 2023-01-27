@@ -88,3 +88,9 @@ p{
 .ant-pagination .ant-pagination-item-active{
   border-color:#282c34
 }
+@media screen and (max-width: 540px){  
+  .home{
+    width: "100%";
+  }
+
+}
