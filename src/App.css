@@ -82,3 +82,9 @@ p{
 .ant-tabs .ant-tabs-tab:hover{
   color:grey
 }
+.ant-pagination .ant-pagination-item-active a{
+  color:#282c34
+}
+.ant-pagination .ant-pagination-item-active{
+  border-color:#282c34
+}

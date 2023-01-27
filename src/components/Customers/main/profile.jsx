@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, Row } from "antd";
+import { Card, Row, Col } from "antd";
 import User from "../../../atoms/User-Avatar";
 import { MdOutlineEdit } from "react-icons/md";
-import { profileStatus, dot, detailsHolder } from "./style";
+import { profileStatus, dot, detailsHolder, paragraph } from "./style";
 
 const ProfileDetails = () => {
   const Title = () => {
@@ -28,46 +28,44 @@ const ProfileDetails = () => {
   return (
     <Card title={<Title />}>
       <div style={detailsHolder}>
-        <Row gutter={0} justify="space-between" 
+        <Row
+        gutter={16}
+        // justify="space-between"
         // style={secondDetail}
         >
-          <p>
-            Gender
-            <br />
+          <Col span={12}>
+            <p style={paragraph}>Gender</p>
+
             <b>Male</b>
-          </p>
-
-          <p>
-            Date Of Birth
-            <br />
+          </Col>
+          <Col span={12}>
+            <p style={paragraph}> Date Of Birth</p>
             <b>12/03/1990</b>
-          </p>
+          </Col>
         </Row>
-        <Row gutter={0} justify="space-between">
-          <p>
-            National Id
-            <br />
+        <br/>
+        <Row gutter={16}>
+          <Col span={12}>
+            <p style={paragraph}>National Id</p>
             <b>xxxxxxx90</b>
-          </p>
-
-          <p>
-            Mobile Number
-            <br />
+          </Col>
+          <Col span={10}>
+            <p style={paragraph}>Mobile Number</p>
             <b>+254712345678</b>
-          </p>
+          </Col>
         </Row>
-        <Row gutter={10} justify="space-between">
-          <p>
-            Pysical Address
-            <br />
+        <br/>
+        <Row gutter={16}>
+          <Col span={12}>
+            <p style={paragraph}> Pysical Address</p>
             <b>Moja Rd, KSM</b>
-          </p>
-
-          <p>
-            Email Address <br />
+          </Col>
+          <Col span={10}>
+            <p style={paragraph}>Email Address</p>
             <b>emailme@gmail.com</b>
-          </p>
+          </Col>
         </Row>
+        <br/>
       </div>
     </Card>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { DownOutlined } from '@ant-design/icons';
 import { Badge, Dropdown, Space, Table } from 'antd';
+import CollapseData from './collapseData';
 
 const SubmittedData = () =>{
     const columns = [
@@ -44,11 +45,7 @@ const SubmittedData = () =>{
             dataIndex: 'community',
             key: 'community',
           },
-        {
-          title: '',
-          key: 'expand',
-          render: () => <a>Publish</a>,
-        },
+  
       ];
       const data = [
       ];
@@ -65,14 +62,19 @@ const SubmittedData = () =>{
           community:"Joseph Msika"
         });
       }
+      const expandedRowRender = () => {
+     
+        return <CollapseData/>;
+      };
       return (
         <>
           <Table
             columns={columns}
             dataSource={data}
             expandable={{
-                // expandedRowRender,
-                defaultExpandedRowKeys: ['0'],
+                expandedRowRender,
+                // defaultExpandedRowKeys: ['0'],
+                fixed:"right"
               }}
           />
           </>

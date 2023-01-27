@@ -31,3 +31,6 @@ export const smallText = {
     float:"right", 
     paddingTop:"2px"
 }
+export const paragraph = {
+    lineHeight: "1px",
+  };
