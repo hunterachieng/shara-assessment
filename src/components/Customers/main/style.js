@@ -34,3 +34,16 @@ export const smallText = {
 export const paragraph = {
     lineHeight: "1px",
   };
+
+export const mainContainer = {
+    display:"flex",
+ 
+}
+
+export const mediaStyles = {
+    '@media (max-width: 540px)':{
+        flexDirection:"column"
+
+
+    }
+}

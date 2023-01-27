@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Row, Col } from "antd";
 import User from "../../../atoms/User-Avatar";
 import { MdOutlineEdit } from "react-icons/md";
-import { profileStatus, dot, detailsHolder, paragraph } from "./style";
+import { profileStatus, dot, paragraph } from "./style";
 
 const ProfileDetails = () => {
   const Title = () => {
@@ -27,11 +27,9 @@ const ProfileDetails = () => {
   };
   return (
     <Card title={<Title />}>
-      <div style={detailsHolder}>
+      <div >
         <Row
         gutter={16}
-        // justify="space-between"
-        // style={secondDetail}
         >
           <Col span={12}>
             <p style={paragraph}>Gender</p>

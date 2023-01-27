@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row , Divider} from "antd";
+import {  Row , Col, Card, Divider} from "antd";
 import { transactionStatus, transactionHeader, smallText } from "./style";
 import { DownOutlined } from "@ant-design/icons";
 import TransactionTable from "./transactionTable";
@@ -7,19 +7,22 @@ import TransactionTable from "./transactionTable";
 const Transactions  = () =>{
     const Title =()=> {
         return(
-            <Row        style={{ padding: "22px 20px" }}
-            justify="space-between"
+            <Row        style={{ padding: "22px 0px" }}
+            gutter={16}
           >
-           <div style={transactionHeader}>
+           <Col span={15}
+           style={transactionHeader}>
             <h5>Transaction History</h5>
             <small>Period 28th Jun22-28 Jul 22 <DownOutlined/></small>
-           </div>
-            <div style={transactionStatus}>
+           </Col>
+            <Col 
+            span={8}
+            style={transactionStatus}>
               
               <p>Money In: <b>  KSh 230.300</b></p>
               <p>Money Out: <b>  KSh 150.300</b></p>
               <b>Closing Bal:  KSh 12.000</b>
-            </div>
+            </Col>
 
             </Row>
         )
