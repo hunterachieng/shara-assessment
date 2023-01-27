@@ -1,16 +1,14 @@
 import React from 'react';
 import { header, menu , slider, title, headerTitle} from './style';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
-import { Layout, Menu, theme } from 'antd';
+import { Layout, Menu} from 'antd';
 import SearchBar from '../../atoms/SearchBar';
 import User from '../../atoms/User-Avatar';
+import {NavLink as Link} from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const SideLayout = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+const SideLayout = ({children}) => {
+
 
   return (
     <Layout style={{minHeight:"100vh"}}>
@@ -32,29 +30,29 @@ const SideLayout = () => {
           theme="light"
           mode="inline"
           style={menu}
-          defaultSelectedKeys={['4']}
+          // defaultSelectedKeys={['4']}
           
         >
-            <Menu.Item>Overview +</Menu.Item>
-            <Menu.Item>Customers +</Menu.Item>
-            <Menu.Item>Companies +</Menu.Item>
+            {/* <Menu.Item><Link to="/hello">Overview +</Link></Menu.Item> */}
+            <Menu.Item><Link to="/" >Customers +</Link></Menu.Item>
+            {/* <Menu.Item>Companies +</Menu.Item>
             <Menu.Item>Deposits +</Menu.Item>
             <Menu.Item>Loans +</Menu.Item>
-            <Menu.Item>Products +</Menu.Item>
-            <Menu.Item>Users +</Menu.Item>
-            <Menu.Item>Communications</Menu.Item>
+            <Menu.Item>Products +</Menu.Item> */}
+            <Menu.Item><Link to="/users">Users +</Link></Menu.Item>
+            {/* <Menu.Item>Communications</Menu.Item> */}
             </Menu>
       </Sider>
       <Layout>
         <Header style={header} >
             <div style={title}>
             <SearchBar/>
-            <User/>
+            <User name="Welcome, UserName" title="Team Lead" initials="UN"/>
             </div>
            
             </Header>
-        <Content style={{ margin: '24px 16px 0' }}>
-          
+        <Content style={{ margin: '24px 2% 0' }}>
+          {children}
         </Content>
         <Footer style={{ textAlign: 'center' }}>Shara Assessment ©2023 Created by Hunter</Footer>
       </Layout>

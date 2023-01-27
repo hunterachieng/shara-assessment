@@ -1,11 +1,13 @@
 export const header={
     padding: "0",
     backgroundColor:"#d3d3d3",
-    borderBottom:"solid 2px grey"
+    borderBottom:"solid 2px grey",
+    height:"90px"
 }
 
 export const menu ={
-    backgroundColor:"#d3d3d3"
+    backgroundColor:"#d3d3d3",
+    marginTop:"15%"
 }
 export const slider ={
     backgroundColor:"#d3d3d3",
@@ -15,7 +17,7 @@ export const slider ={
 export const title = {
     display:"flex",
     justifyContent:'space-between',
-    margin:"0 2%"
+    margin:"1% 2% 0"
 
 }
 export const headerTitle={

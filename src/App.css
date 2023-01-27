@@ -66,3 +66,25 @@
   border-color: #d3d3d3 !important;
   box-shadow: 0 0 0 2px #d3d3d3;
 }
+p{
+  color: grey;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color:#282c34
+}
+.ant-tabs .ant-tabs-tab-btn {
+  color:grey
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+ background-color:#282c34
+}
+.ant-tabs .ant-tabs-tab:hover{
+  color:grey
+}
+.ant-pagination .ant-pagination-item-active a{
+  color:#282c34
+}
+.ant-pagination .ant-pagination-item-active{
+  border-color:#282c34
+}

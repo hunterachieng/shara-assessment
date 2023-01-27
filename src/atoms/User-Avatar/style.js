@@ -1,9 +1,9 @@
 export const userDetails = {
-    display:"flex",   
+    display:"flex", 
 
 }
 export const userName = {
-    height:"20%",
+    // height:"20%",
     lineHeight:"2px",
     paddingLeft:"5px"
 }
