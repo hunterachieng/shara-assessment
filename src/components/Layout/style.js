@@ -1,4 +1,4 @@
-import { color } from "gulp-cli/lib/shared/cli-options"
+
 
 export const header={
     padding: "0",
@@ -26,5 +26,5 @@ export const headerTitle={
     paddingLeft: "25px",
     backgroundColor:"#d3d3d3",
     fontWeight:"bold",
-    color:"#000000"
+    color:"black"
 }
