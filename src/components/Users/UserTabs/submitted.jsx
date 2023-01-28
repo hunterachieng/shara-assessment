@@ -67,7 +67,7 @@ const SubmittedData = () => {
       <Table
         columns={columns}
         dataSource={data}
-        scroll={{ x: "50vw" }}
+        scroll={{ x: "30vw" }}
         expandable={{
           expandedRowRender,
         }}

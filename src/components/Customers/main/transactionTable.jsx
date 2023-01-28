@@ -60,7 +60,7 @@ const TransactionTable = () => (
   <Table
     columns={columns}
     dataSource={data}
-    scroll={{x:'10vw'}}
+    scroll={{x:'500px'}}
     size="small"
     pagination={{ position: ["none", "none"] }}
   />
