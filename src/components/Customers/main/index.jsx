@@ -7,30 +7,22 @@ import Products from "./products";
 import { mainContainer } from "./style";
 
 const Main = () => (
-  <Row className="site-card-wrapper" style={mainContainer}>
-    <div className="home" style={{ width: "70%" }}>
-      <Row gutter={{ xs: 8, sm: 20, md: 24, lg: 20 }}>
-        <Col span={12}>
-          <ProfileDetails />
-        </Col>
-        <Col span={12}>
-          <Transactions />
-        </Col>
-      </Row>
-      <br />
-      <Row gutter={16}>
-        <Col span={12}>
-          <Products />
-        </Col>
-      </Row>
+  <div className="grid-container">
+    <div className="grid-item">
+    <ProfileDetails />
     </div>
-    <div>
-      <Row gutter={16} style={{ marginLeft: "3%" }}>
-        <Col span={35}>
-          <Activities />
-        </Col>
-      </Row>
+    <div className="grid-item item2">
+    <Transactions />
     </div>
-  </Row>
+  
+    <div className="grid-item item3">
+    <Activities />
+    </div>
+    <div className="grid-item item4">
+    <Products />
+    </div>
+
+  </div>
+  
 );
 export default Main;

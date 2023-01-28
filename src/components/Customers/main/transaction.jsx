@@ -10,7 +10,7 @@ const Transactions  = () =>{
             <Row        style={{ padding: "22px 0px" }}
             gutter={16}
           >
-           <Col span={15}
+           <Col span={14}
            style={transactionHeader}>
             <h5>Transaction History</h5>
             <small>Period 28th Jun22-28 Jul 22 <DownOutlined/></small>

@@ -25,7 +25,7 @@ const SideLayout = ({children}) => {
       >
         <div className="logo" />
         <Header style={headerTitle}>
-            Hunter</Header>
+        <Link to="/" style={{color:"#000000"}}>Hunter</Link></Header>
         <Menu
           theme="light"
           mode="inline"

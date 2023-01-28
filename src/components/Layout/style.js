@@ -1,3 +1,5 @@
+
+
 export const header={
     padding: "0",
     backgroundColor:"#d3d3d3",
@@ -23,5 +25,6 @@ export const title = {
 export const headerTitle={
     paddingLeft: "25px",
     backgroundColor:"#d3d3d3",
-    fontWeight:"bold"
+    fontWeight:"bold",
+    color:"black"
 }
