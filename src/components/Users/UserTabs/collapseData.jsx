@@ -63,7 +63,7 @@ const CollapseData = () => {
               <b>{item.gender}</b>
             </Col>
             <Col span={4}>
-              <p style={paragraph}> Mobile Number</p>
+              <p style={paragraph}> Mobile </p>
               <b>{item.mobileNumber}</b>
             </Col>
             <Col span={5}>
@@ -82,11 +82,11 @@ const CollapseData = () => {
               <b>{item.incoporateDate}</b>
             </Col>
             <Col span={4}>
-              <p style={paragraph}>Business Address</p>
+              <p style={paragraph}> Address</p>
               <b>{item.businessAddress}</b>
             </Col>
             <Col span={4}>
-              <p style={paragraph}>Business Category</p>
+              <p style={paragraph}>Category</p>
               <b>{item.businessCategory}</b>
             </Col>
             <Col span={5}>
@@ -96,19 +96,19 @@ const CollapseData = () => {
           </Row>
           <br />
           <Row gutter={16}>
-            <Col span={4}>
+            <Col span={5}>
               <p style={paragraph}>Shop Setup Photos</p>
               <PictureOutlined /> <a href="#">{item.shopSetup}</a>
             </Col>
-            <Col span={11}>
-              <p style={paragraph}>Business License or permit/certificate</p>
+            <Col span={10}>
+              <p style={paragraph}>Business License/permit/certificate</p>
             <Row>  {item.licence.map(data=>
-                <Col span={8}><FileImageOutlined /><a href="#">{data.number}</a> </Col>)}</Row>
+                <Col span={10}><FileImageOutlined /><a href="#">{data.number}</a> </Col>)}</Row>
             </Col>
             <Col span={8}>
-              <p style={paragraph}>Mpesa Statement or Bank Statement</p>
+              <p style={paragraph}>Mpesa Statement/Bank Statement</p>
              <Row > {item.statements.map(data=>
-                <Col span={12}><FileImageOutlined /><a href="#">{data.statement}</a> </Col>)} </Row>
+                <Col span={10}><FileImageOutlined /><a href="#">{data.statement}</a> </Col>)} </Row>
             </Col>
          
           </Row>
