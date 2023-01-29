@@ -5,6 +5,8 @@
 The Admin Dashboard was a project initiated to make it easy for the employees at Shara to view and interpret the data from our customers. 
 The dashboard is a web based platform created using the React Framework and Ant Design for the styling.
 
+After researching and debating between AntDesign and Material UI, I chose to use AntDesign as it offeres a lot of comprehensive UI patterns that are not available in MaterialDesign, and contains less code which makes it fast to implement.
+
 ## Features
 
 ### Accordion
